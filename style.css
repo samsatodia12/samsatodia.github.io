@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Awesome', Times, serif;
     margin-top: 0px;
@@ -27,9 +31,12 @@ header {
 }
 
 #header-nav > ul > li > a {
+    font-family: 'Awesome', Times, serif;
     text-decoration: none;
     padding: 12px;
-    border: solid white;
+    border: solid #282aada6;
+    color: #282aada6;
+    border-radius: 10px;
 }
 
 h1 {
@@ -52,12 +59,14 @@ article {
     height: 60%;
     color: #12136a;
     margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 hgroup {
     margin-top: 0;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 h2 {
@@ -100,7 +109,7 @@ h4 {
     gap: 10px;
 }
 
-.left-column, .right-column {
+#left-column, #right-column {
     display: flex;
     flex-direction: column; 
     gap: 15px; 
@@ -111,7 +120,7 @@ h3 {
     text-align: left;
     padding-left: 40px;
     font-size: 1.2vw;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 0px;
     text-decoration: underline;
 }
@@ -120,7 +129,7 @@ h3 {
     text-align: left;
     padding-left: 40px;
     font-size: 1.2vw;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 0px;
     text-decoration: underline;
 }
@@ -155,7 +164,7 @@ img{
     justify-content: space-evenly;
     margin: 0px;
     font-size: 1vw;
-    padding: 5px;
+    padding: 10px;
 }
 
 footer {
@@ -176,8 +185,44 @@ footer {
 }
 
 #footer-container > ul > li > a {
+    font-family: 'Awesome', Times, serif;
+    color: #282aada6;
     text-decoration: none;
     padding: 12px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #FEF9D9;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    color: #12136a;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @font-face {

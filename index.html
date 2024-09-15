@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipePage</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <link href="">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h5>Contact Form</h5>
+            <form id="popupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
     <header>
         <h1>Sam's Recipes</h1>
         <aside>
             <section>
                 <nav id ="header-nav">
                     <ul>
-                        <li><a href="/blog/month/january">More Recipe's</a></li>
-                        <li><a href="/blog/month/february">Ingredients</a></li>
-                        <li><a href="/blog/month/march">Method</a></li>
-                        <li><a href="/blog/month/march">Subscribe</a></li>
+                        <li><a href="https://www.nigella.com/recipes/">More Recipe's</a></li>
+                        <li><a href="#left-column">Ingredients</a></li>
+                        <li><a href="#right-column">Method</a></li>
+                        <li><a href="#" id = "openFormLink">Subscribe!</a></li>
                     </ul>
                 </nav>
             </section>
@@ -36,7 +50,7 @@
             Anyway, this is the Victoria Sponge I've been making for decades, and I'm absolutely thrilled that it is now on the site. I don't advise making this in advance, as it stales quickly. As with so many simple pleasures, just savour it in the moment.
         </p>
         <div id = "List-box"> 
-            <div class="left-column">
+            <div id="left-column">
                 <h3>Ingredients</h3>
                 <ul id = "list-1">
                     <li>Butter, for greasing the cake pan</li>
@@ -56,7 +70,7 @@
                 </ul>
                 <img src="images\victoriasponge.jpg" alt="Victoria Sponge Cake Image" />
             </div>
-            <div class = "right-column">
+            <div id = "right-column">
                 <h3 id ="h4">Method</h3>
                 <ol id = "list-2">
                     <li>Heat the oven to 180°C/160°C Fan/350°F. Grease the sides of the tins with a small amount of butter and line the bases with baking parchment.</li>
